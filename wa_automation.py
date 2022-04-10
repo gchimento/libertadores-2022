@@ -1,13 +1,14 @@
-#import pywhatkit
+# import pywhatkit
 
-#pywhatkit.sendwhatmsg_to_group('1KHMLgAL7zB6X9KE4vkPpR', 'hola', 17, 26, 15, False, 3)
+# pywhatkit.sendwhatmsg_to_group('1KHMLgAL7zB6X9KE4vkPpR', 'hola', 17, 26, 15, False, 3)
 
 import time
 from twilio.rest import Client
 
-while 1:
+def river_campeon():
+# while 1:
     account_sid = 'AC67e7dec23220cca71376a1d3707a8cb7'
-    auth_token = 'eef7c215979c6bd5db3446db4ae34436'
+    auth_token = '18592d578b040a3d769861a9078bfba7'
     client = Client(account_sid, auth_token)
 
     message = client.messages.create(
@@ -18,4 +19,4 @@ while 1:
 
     print(message.sid)
 
-    time.sleep(10)
+#    time.sleep(10)
